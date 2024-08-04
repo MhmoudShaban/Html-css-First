@@ -1,0 +1,420 @@
+/* Global Rules */
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'droid sans' sans-serif;
+   
+}
+
+/* Start header ******************************************/
+header{
+    background-image: url(../images/images1.jpg);
+    height: 500px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+}
+header .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(40, 77, 99, 0.4);
+    color: #fff;
+    overflow: hidden;
+    
+}
+header .overlay h1{
+    margin-top: 100px;
+    font: bold italic 26px tahoma;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+}
+header .overlay .p1{
+    font-size: 22px;
+    border: 2px solid #fff;
+    width: 46%;
+    padding: 10px;
+    margin-right: 1%;
+    margin-left: 1%;
+    float: left;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition:background .5s ease-in-out;
+}
+header .overlay .order{
+    font-size: 22px;
+    border: 2px solid #fff;
+    padding: 10px;
+    text-transform: capitalize;
+    margin:30px 5% 0 1%;
+    cursor: pointer;
+    transition:background .5s ease-in-out;
+}
+header .overlay div.p1:hover{
+    background-color: #eee;
+    color: #444;
+}
+header .overlay div.order:hover{
+    background-color: #eee;
+    color: #444;
+}
+@media (max-width:767px) {
+    h1{
+        margin-bottom: 20px;
+    }
+    header .overlay .p1{
+        float: none;
+        margin:10px auto 0 ;
+        width: 100%;
+    }
+    header .overlay .order{
+        margin: 20px 0 0 0;
+    }
+    
+}
+/* End header *******************************************/
+
+/* Start feature  **************************************/
+
+.features h2{
+    font-size: 30px;
+    text-align: center;
+    font-family: sans-serif;
+    color: #555;
+    text-transform: capitalize;
+}
+.features .feat{
+    float: left;
+    width: 33.333%;
+    color: #555;
+    padding-left: 15px;
+}
+.features .feat h1{
+    text-transform: capitalize;
+    border: 2px solid #555;
+    border-radius: 10px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+}
+.features p{
+    font-size: 20px;
+    line-height: 1.3em;
+}
+
+@media (max-width:767px){
+    .features .feat{   
+        width: 100%
+    }
+    .feat h1{
+        font-size: 24px;
+    }
+    .feat p{
+        font-size: 18px;
+    }
+}
+@media (min-width:768px) and (max-width:992px) {
+    
+      .features .feat{
+          width: 50% 
+      }
+      .features .feat:last-of-type{
+          width: 100%;
+      }
+}
+
+
+/* End feature **************************/
+/* Start About US  */
+.aboutUS{
+    background-color: #ddd;
+    
+}
+.aboutUS h1{
+    text-align: center;
+    padding: 20px 20px 5px 20px;
+    font-size: 40px;
+    text-transform: capitalize;
+    color: #555;
+}
+.aboutUS p{
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    line-height: 1.8;
+    color: #777;
+}
+
+/* End About US  */
+/* Start Gallery images */
+.gallery{
+    width: 100%;
+    
+}
+.gallery h1{
+    text-align: center;
+    text-transform: capitalize;
+    color: #555;
+    
+}
+.gallery .img{
+    float: left;
+    width: 25%;
+    padding: 15px;
+}
+.gallery .img img:hover{
+    transition: .5s;
+    cursor: pointer;
+    opacity: .6;
+}
+.gallery .img img{
+    width: 100%;
+}
+@media (max-width:767px){
+    .gallery .img{
+        float: left;
+        width: 50%;
+        padding: 15px;
+    }
+    .gallery .img img{
+        width: 100%;
+    }
+}
+@media (min-width:768px) and (max-width:992px) {
+    .gallery .img{
+        float: left;
+        width: 33.33333%;
+    }
+}
+
+/* End Gallery images */
+/* Start pricing table */
+.pricing-table{
+    background-color: rgb(71, 71, 71);
+    text-align: center;
+    color: #fff;
+    text-transform: capitalize;
+}
+.pricing-table h1{
+    padding: 20px;
+    margin: 10px 0 30px 0;
+    color: #ddd;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.pricing-table .pricing-first{
+    width: 31.33333%;
+    float: left;
+    border: 2px solid #fff;
+    padding: 20px 0;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+.pricing-table .pricing-first h3{
+    margin: 10px 20px;
+    font-size: 22px;
+}
+.pricing-table .pricing-first span{
+    display: inline-block;
+    font-size: 20px;
+    margin: 0 0 10px;
+    color: #ccc;
+}
+.pricing-table .pricing-first ul{
+    line-height: 1.8;
+    font-size: 18px;
+    color: #ddd;
+}
+@media (max-width:767px) {
+    .pricing-table .pricing-first{
+        width: 100%;
+    }  
+}
+/* end pricing table */
+/* start Say About  */
+.testmonials{
+    padding: 50px;
+}
+.testmonials h1{
+    color: #777;
+    text-align: center;
+    text-transform: capitalize;
+    margin: 0 0 20px;
+}
+.testmonials .person-say{
+    background-color: #ccc;
+    padding: 20px;
+    margin: 0 0 20px;
+    border: 1px solid rgb(83, 81, 81);
+    float: left;
+    border-radius: 10px;
+}
+.testmonials .person-say div{
+    float: left;
+}
+.testmonials .person-say div:first-of-type{
+    width: 13%;
+}
+.testmonials .person-say div:last-of-type{
+    width:75%;
+    margin-left: 10px;   
+}
+
+.testmonials .person-say img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.testmonials .person-say:first-of-type{
+    width: 75%;
+    margin-left: 10%;
+}
+.testmonials .person-say:not(:first-of-type) {
+    width: 48%;
+    margin-left: 1%;
+}
+.testmonials .person-say:not(:first-of-type) img{
+    width: 100%;
+    height: 100%;
+    margin-left: -10px;
+}
+
+.testmonials .person-say h3{
+    margin: 0 0 10px;
+    color: #444;
+}
+.testmonials .person-say p{
+    margin: 0px;
+    line-height: 1.7;
+}
+@media (max-width:767px) {
+    .testmonials .person-say{
+        width:100% !important;
+    
+    }
+    .testmonials .person-say:first-of-type{
+        margin-left: 0 !important;
+    }
+       
+}
+@media (min-width:768px) and (max-width:1190px) {
+    .testmonials .person-say{
+        width:100% !important;
+    
+    }
+    .testmonials .person-say:first-of-type{
+        margin-left: 0 !important;
+    }
+}
+/* End Say About  */
+/*  Start Information */
+.info{
+    background-color: #eee;
+    padding: 30px 0;
+}
+.info h1{
+    text-align: center;
+    text-transform: capitalize;
+
+}
+.info ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.info ul li{
+    display: inline-block;
+    background-color: #ddd;
+    padding: 10px;
+    font-size: 22px;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+.info .contents > div{
+    padding: 20px;
+    background-color: #fff;
+}
+.info .contents >div:not(:first-of-type){
+    display: none;
+}
+.info ul li.selected{
+    background-color: #fff;
+    color: #5296c1;
+    font-weight: bold;
+}
+@media (max-width:767px) {
+    .info ul li{
+        display: block;
+        margin: 2px;
+    }
+    
+}
+/*  End Information */
+/* Start Footer */
+.footer{
+    background-color: #333;
+    color: #fff;
+}
+.footer .container div{
+    float: left;
+    padding: 20px;
+    text-transform: capitalize;
+    text-align: center;
+    width: 50%;
+}
+@media (max-width:767px){
+    .footer .container div{
+        width: 100%;
+    }
+}
+/* End Footer */
+
+/*Start my framework**********************/
+.text-center{
+    text-align: center;
+}
+.container{
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.clearfix{
+    clear: both;
+}
+/*End my framework***********************/
+
+@media (max-width:767px) and(max-width:1190px) {
+    header .overlay .order{
+        display: none;
+       
+    }
+}
+@media (min-width:768px) {
+    .container{
+        width: 750px;   
+        
+    }
+}
+@media (min-width:992px) {
+    .container{
+        width: 970px;   
+    }    
+}
+@media (min-width:1200px) {
+    .container{
+        width: 1170px;   
+    }     
+}
